@@ -1,5 +1,19 @@
 # liquibase-github-action
 
+## What is this fork about
+This fork uses nitzanav/liquibase-with-nodejs-docker:latest with 
+Add node.js/npm as part of this docker image
+The goal is to enable defining `executeCommand` of `liquibase`.
+Example:
+```xml
+    <changeSet id="1.0">
+        <executeCommand executable="npm">
+            <arg value="--prefix=/opt/migration/nodejs_project_x"/>
+            <arg value="importData"/>
+        </executeCommand>
+    </changeSet>
+```
+
 Official Github Action to run Liquibase in your pipeline.
 
 ### Usage

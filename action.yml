@@ -1,5 +1,5 @@
 # action.yml
-name: 'Liquibase Github Action'
+name: 'Liquibase Github Action (with node.js/npm installed)'
 description: 'Validate, Prepare and Execute Liquibase CLI'
 inputs:
   operation: # [update, updateCount, tag, updateToTag, rollback, rollbackCount, rollbackToDate, updateSQL, futureRollbackSQL, status, history, diff, checks run]
